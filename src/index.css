@@ -1,0 +1,31 @@
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff4d30;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+img{
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}

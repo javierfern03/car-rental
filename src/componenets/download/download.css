@@ -1,0 +1,45 @@
+
+.download-section{
+    margin: 0 auto!important;
+    max-width: 83rem!important;
+    /* padding: 0 1.563rem!important; */
+    
+    padding: 6.25rem 1.563rem;
+}
+
+.download-section__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.download-section__title h2{
+    font-size: 42px;
+}
+
+.download-section__title p{
+    color: #706f7b;
+    font-family: Rubik,sans-serif;
+    line-height: 1.5;
+}
+
+.download-section__images{
+    display: flex;
+    gap: 1.875rem;
+    margin-top: 1.25rem;
+}
+
+
+@media (max-width: 550px){
+.download-text__btns {
+    align-items: center;
+    flex-direction: column;
+}}
+
+@media (max-width: 700px){
+.download-text__btns {
+    justify-content: center;
+}}
