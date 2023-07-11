@@ -97,7 +97,7 @@ const BookCar = () => {
   return (
     <>
       <section>
-        <div className="book-car">
+        <div id="booking-section" className="book-car">
           <div className="book-car__container">
             <h2>Book a card</h2>
             <p className="error-message">

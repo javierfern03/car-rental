@@ -3,8 +3,9 @@
     margin: 0 auto!important;
     max-width: 83rem!important;
     /* padding: 0 1.563rem!important; */
-    
+    background-color: #f8f8f8;
     padding: 6.25rem 1.563rem;
+    height: auto;
 }
 
 .download-section__title{
@@ -28,18 +29,19 @@
 
 .download-section__images{
     display: flex;
+
     gap: 1.875rem;
     margin-top: 1.25rem;
 }
 
 
 @media (max-width: 550px){
-.download-text__btns {
+.download-section__images {
     align-items: center;
     flex-direction: column;
 }}
 
 @media (max-width: 700px){
-.download-text__btns {
+.download-section__images {
     justify-content: center;
 }}

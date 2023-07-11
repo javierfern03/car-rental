@@ -1,8 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link, NavLink } from "react-router-dom";
 
 const Hero = () => {
+  const [goUp, setGoUp] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
+
+  const bookBtn = () => {
+    document
+      .querySelector("#booking-section")
+      .scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const onPageScroll = () => {
+      if (window.pageYOffset > 600) {
+        setGoUp(true);
+      } else {
+        setGoUp(false);
+      }
+    };
+    window.addEventListener("scroll", onPageScroll);
+
+    return () => {
+      window.removeEventListener("scroll", onPageScroll);
+    };
+  }, []);
+
   return (
-    <div className="hola">
+    <section className="hola">
         {/* <div className="home__card-image">
         <img src="src\image\car-home.png" alt="" />
       </div> */}
@@ -20,9 +48,9 @@ const Hero = () => {
             </p>
             <div className="home__buttons">
               <div className="home__buttons__book-ride">
-                <a href="#">
+                <Link onClick={bookBtn} to="/">
                   Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
-                </a>
+                </Link>
               </div>
               <div className="home__buttons__learn-more">
                 <a href="#">
@@ -32,7 +60,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+        <div
+          onClick={scrollToTop}
+          className={`scroll-up ${goUp ? "show-scroll" : ""}`}
+        >
+          <b className="fa-solid fa-angle-up">∧</b>
+        </div>
+      </section>
   )
 }
 

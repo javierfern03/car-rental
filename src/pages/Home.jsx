@@ -9,6 +9,7 @@ import ChooseUs from "../componenets/ChooseUs";
 import Testimonials from "../componenets/Testimonials";
 import Faq from "../componenets/Faq";
 import Download from "../componenets/download/Download";
+import Footer from "../componenets/footer/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Testimonials/>
       <Faq/>
       <Download/>
+      <Footer/>
     </>
   );
 };

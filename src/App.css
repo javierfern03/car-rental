@@ -1,3 +1,29 @@
+
+.scroll-up {
+  align-items: center;
+  background-color: #ff4d30;
+  border: 3px solid #fff;
+  bottom: 3.125rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 1.563rem;
+  height: 1.25rem;
+  justify-content: center;
+  padding: 0.7rem;
+  position: fixed;
+  right: 3.125rem;
+  text-align: center;
+  width: 1.25rem;
+  z-index: 20;
+}
+
+
+
+.show-scroll {
+  display: flex;
+}
+
 .logo {
   width: 9rem;
 }
@@ -500,7 +526,7 @@
 /* PLAN TRIP */
 
 .plan-container {
-  padding: 3.5rem 2rem;
+  padding: 3.5rem 1.563rem;
 }
 
 .plan-container__boxes {
@@ -508,7 +534,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   margin-top: 3.7rem;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 @media (max-width: 1021px) {
@@ -559,6 +585,10 @@
 
 .plan-container__boxes-item__text p {
   color: #706f7b;
+}
+.plan-container__boxes-item__text h3 {
+  font-size: 1.5rem;
+  font-family: Rubik,sans-serif;
 }
 
 /*    PICK CAR    */
@@ -719,7 +749,7 @@
   background-position: -225px 255px;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1.25rem 0 6.25rem;
+  padding: 1.25rem 1.648rem 6.25rem 1.648rem ;
 }
 .text-container {
   display: flex;
@@ -843,7 +873,8 @@
 .testimonials-content__title h4 {
   font-family: Rubik, sans-serif;
   font-size: 1.375rem;
-  font-weight: 500;
+  font-weight: 600;
+  padding-bottom: 6px;
 }
 
 .testimonials-content__title h2 {
@@ -953,9 +984,6 @@
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 0 70%;
-  margin: 0 auto!important;
-  max-width: 83rem!important;
-  padding: 0 1.563rem!important;
 }
 .faq-content {
   display: flex;
