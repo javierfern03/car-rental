@@ -11,6 +11,8 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar-mobile">
+        <div>
+
         <a href="/">
           <div className="logo">
             <img src="src\images\ImageNavbar.png" alt="logo card rental" />
@@ -21,7 +23,7 @@ const Navbar = () => {
         </div>
         <nav
           className={`navbar-mobile__container ${openNav ? "open-nav" : ""} `}
-        >
+          >
           <div>
             <div className="navbar-mobile__close">
               <button onClick={handleCLickOpenNav}>X</button>
@@ -60,6 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
+          </div>
       </div>
 
       <div className="navbar">

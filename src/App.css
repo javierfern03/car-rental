@@ -29,12 +29,15 @@
 }
 
 .navbar-mobile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1.7rem 1rem;
   z-index: 999999;
   position: absolute;
+  width: 90%;
+}
+.navbar-mobile div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-mobile__logo {
@@ -154,6 +157,7 @@
 .home__content h4 {
   font-size: 1.5rem;
   margin: 0;
+  padding-top: 2rem;
 }
 
 .home__content h1 {

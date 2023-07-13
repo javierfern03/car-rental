@@ -1,0 +1,108 @@
+.container {
+  margin: 0 auto !important;
+  max-width: 83.125rem !important;
+  padding: 0 1.563rem !important;
+}
+
+.contact-div {
+  grid-gap: 1.875rem;
+  background-image: url(/static/media/bg-contact.c178c6d….png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #010103;
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 6.25rem 1.25rem;
+}
+
+.contact-div__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  max-width: 25.625rem;
+}
+.contact-div__text h2 {
+  font-size: 2.625rem;
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+}
+.contact-div__text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+.contact-div__text a {
+  color: #010103;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contact-div__text a:hover {
+  color: #ff4d30;
+}
+.contact-div__form,
+.contact-div__form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-div__form,
+.contact-div__form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-div__form form label {
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+.contact-div__form form label b {
+  color: #ff4d30;
+}
+.contact-div__form form input,
+.contact-div__form form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 19px 30px;
+}
+.contact-div__form form textarea {
+  height: 11.25rem;
+  margin-bottom: 1.563rem;
+}
+.contact-div__form form input,
+.contact-div__form form textarea {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 19px 30px;
+}
+.contact-div__form form button {
+  background-color: #ff4d30;
+  border: 2px solid #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 1.125rem 1.875rem;
+  transition: all 0.3s;
+}
+
+@media (max-width: 950px) {
+  .contact-div__text {
+    margin: 0 auto 1.25rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact-div {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
