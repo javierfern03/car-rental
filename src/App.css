@@ -33,6 +33,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.7rem 1rem;
+  z-index: 999999;
   position: absolute;
 }
 
@@ -84,6 +85,7 @@
   right: 0;
   top: 0;
   display: none;
+  z-index: 9999999;
 }
 
 .navbar__ul {

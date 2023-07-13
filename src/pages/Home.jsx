@@ -14,7 +14,6 @@ import Footer from "../componenets/footer/Footer";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero/>
       <BookCar/>
       <PlanTrip/>
