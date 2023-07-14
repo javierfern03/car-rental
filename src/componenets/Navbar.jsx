@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import imageNav from '../images/imageNavbar.png'
+import imageNav from '../images/ImageNavbar.png'
 
 
 const Navbar = () => {
