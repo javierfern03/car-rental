@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from "react-router-dom";
+import carHome from '../images/car-home.png'
+import cartBg from '../images/hero-bg.png'
 
 const Hero = () => {
   const [goUp, setGoUp] = useState(false);
@@ -31,9 +33,13 @@ const Hero = () => {
 
   return (
     <section className="hola">
-        {/* <div className="home__card-image">
-        <img src="src\image\car-home.png" alt="" />
-      </div> */}
+
+        <div className="home__card-image">
+
+        <img className='hero-bg' src={cartBg} alt="" />
+        <img className='hero-car' src={carHome} alt="" />
+      </div>
+
         <div className="home__content">
           <div className="home__content__text">
             <h4 className="">Plan your now</h4>

@@ -9,6 +9,8 @@ const Download = () => {
   return (
     <>
       <section className="download-section">
+        <div>
+
         <div className="download-section__title">
           <h2>Download our app to get most out of it</h2>
           <p>
@@ -25,6 +27,8 @@ const Download = () => {
             <img src={img2} alt="" />
           </div>
         </div>
+        </div>
+
       </section>
     </>
   );

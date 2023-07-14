@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import imageNav from '../images/imageNavbar.png'
+
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -68,7 +70,7 @@ const Navbar = () => {
       <div className="navbar">
         <a href="/">
           <div className="logo navbar__logo">
-            <img src="src\image\ImageNavbar.png" alt="logo card rental" />
+            <img src={imageNav} alt="logo card rental" />
           </div>
         </a>
         <nav className="navbar__container">

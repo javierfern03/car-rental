@@ -13,7 +13,6 @@ footer {
   grid-template-columns: 27fr 21fr 21fr 21fr;
   justify-content: center;
   text-align: left;
-  grid-template-columns: 1fr;
 }
 
 .container {
